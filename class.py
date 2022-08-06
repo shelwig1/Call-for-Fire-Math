@@ -1,4 +1,12 @@
-class enemyPosition:
+class polarshift:
+#accepts an MGRS object, outputs an MGRS object
+
+
+#where should adding stuff to MGRS happen?
+#should happen within the object
+
+#determine shift in enemyPosition, add the shift within the MGRS object
+
 #Mils vs degrees
 #jesus fuck we still don't have MGRS enabled
 
@@ -9,12 +17,6 @@ class enemyPosition:
 		self.grid = grid
 		self.direction = direction
 		self.distance = distance
-
-	def process(grid):
-		precision = len(self.grid[0])
-		formatted = [int(s) for s in self.grid]
-		polar = polar2cartesian(formatted,self.direction,self.distance)
-		print(output)
 
 	def polar2cartesian(grid,direction,distance):
 		rads = math.radians(direction)
